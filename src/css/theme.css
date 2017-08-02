@@ -1,10 +1,13 @@
 @charset "UTF-8";
 
+/*
+background-image: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0.6)), url("../assets/img/woman-umbrella-floating-jumping-466455.jpeg");
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+*/
 header {
-    background-image: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0.6)), url("../assets/img/woman-umbrella-floating-jumping-466455.jpeg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+    background-color: #85144b;  
     padding: 2vh;
     font-weight: 700;
 }
@@ -25,15 +28,19 @@ header {
     }
 }
 
+body {
+    background-color: #001f3f;
+}
+
 .upper {
     text-transform: uppercase;
 }
 
 section {
-    
     padding: 0.6rem;
-    border: 2.5px solid black;
-    border-radius: 0.3em;
+    background-color: #001f3f;
+    color: #fff;
+    
 }
 
 h3 {
@@ -41,7 +48,7 @@ h3 {
 }
 
 section h3 {
-    border-bottom: 2px solid black;
+    border-bottom: 2px solid #ff851b;
 }
 
 h1,
