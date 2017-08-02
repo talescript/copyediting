@@ -1,7 +1,7 @@
 @charset "UTF-8";
 
 header {
-    background-image: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0.8)), url("../assets/img/woman-umbrella-floating-jumping-466455.jpeg");
+    background-image: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0.6)), url("../assets/img/woman-umbrella-floating-jumping-466455.jpeg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
