@@ -1,0 +1,50 @@
+@charset "UTF-8";
+
+header {
+    background-image: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0.8)), url("../assets/img/woman-umbrella-floating-jumping-466455.jpeg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 2vh;
+    font-weight: 700;
+}
+
+/* Larger than mobile */
+@media (min-width: 400px) {}
+/* Larger than tablet */
+@media (min-width: 750px) {}
+/* Larger than desktop */
+@media (min-width: 1000px) {}
+/* Larger than Desktop HD */
+@media (min-width: 1200px) {}
+
+/* Larger than phablet (also point when grid becomes active) */
+@media (min-width: 550px) {
+    header {
+        height: 80vh;
+    }
+}
+
+.upper {
+    text-transform: uppercase;
+}
+
+section {
+    
+    padding: 0.6rem;
+    border: 2.5px solid black;
+    border-radius: 0.3em;
+}
+
+h3 {
+    padding-bottom: 0.6em;
+}
+
+section h3 {
+    border-bottom: 2px solid black;
+}
+
+h1,
+header > div > p {
+    color: #fff;
+}

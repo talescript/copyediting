@@ -1,0 +1,147 @@
+@charset "UTF-8";
+
+/**
+ * Understanding the html vs body elements in css
+ * http://phrogz.net/css/htmlvsbody.html
+ */
+html {
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+/*
+* + * {
+    margin-top: 1.5rem;
+} */
+
+html, body,
+header, nav, article, 
+section, aside, footer,
+img, form, table, 
+span, div, menu, 
+canvas, figure,
+ol, ul
+{
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    height: 100%;
+}
+
+
+/*
+p {
+    margin: 0 0 1rem 0;
+} */
+
+/**
+ * Links
+ */ 
+a {
+    color: #0077aa;
+    text-decoration: none;    
+}
+
+a:hover {
+    color: #005c83;
+}
+
+/**
+ * Lists, blockquote and table
+ */
+dl {
+    margin-bottom: 1rem;
+}
+
+dt {
+    font-weight: 700;
+}
+
+dd {
+    margin: 0 0 1rem 0;
+}
+
+ol, ul {
+    list-style: none;
+    padding-left: 1rem;
+    margin: 0 0 1rem 0;
+}
+
+ol ol,
+ol ul,
+ul ol,
+ul ul {
+    margin-bottom: 0;
+}
+
+blockquote, q {
+	quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/**
+ * Placeholders
+ */
+::-webkit-input-placeholder {
+    color: #0077aa;
+}
+::-moz-placeholder {
+    color: #0077aa;
+}
+:-ms-input-placeholder {
+    color: #0077aa;
+}
+:-moz-placeholder {
+    color: #0077aa;
+}
+
+/* Broken images AND responsive images */
+img {
+    font-family: Arial, Helvetica, sans-serif; /* Change fonts */
+    font-weight: 300;
+    line-height: 2;
+    text-align: center;
+
+    height: auto;
+    max-width: 100%;
+    vertical-align: middle;
+    border: 0;
+/** For testing purposes, to be removed later
+    display: block;
+    max-height: 98vh;
+    max-width: 100%;
+    width: auto;
+    height: auto;
+    margin: 0.6rem auto;
+    padding: 0;
+*/
+}
+
+img:before {
+    content: "The image below is missing";
+    margin-bottom: 10px;
+}
+
+img:after {
+    content: "(url: " attr(src) ")";
+    font-size: 12px;
+}
+
+figure {
+    margin: 0 0 1rem 0;
+}
