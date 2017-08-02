@@ -55,3 +55,8 @@ h1,
 header > div > p {
     color: #fff;
 }
+
+.attn {
+    color: #ff851b; 
+    font-weight: 600;
+}

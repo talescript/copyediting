@@ -24,4 +24,7 @@ section > h3 {
 
 section {
     margin-bottom: 2.5em;
+    margin: 0 auto;
+    max-width: 36em;
+    padding: 2em;
 }
