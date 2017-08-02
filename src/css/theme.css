@@ -56,7 +56,11 @@ header > div > p {
     color: #fff;
 }
 
-.attn {
+.oattn {
     color: #ff851b; 
     font-weight: 600;
+}
+
+.battn {
+    color: #7fdbff;
 }
