@@ -317,25 +317,6 @@ header a {
     margin: 1em auto;
 }
 
-.form-btn {
-    font-size: 18px;
-    padding: .5em 1em;
-    border: transparent;
-    border-radius: 2px;
-    white-space: nowrap;
-    cursor: pointer;
-    letter-spacing: 0.01em;
-    background: #0078e7;
-    color: #fff;
-    -moz-user-select: none;
-    user-select: none;
-    line-height: normal;
-}
-
-.form-btn:hover {
-    background: #277ecf;
-}
-
 /**
  * Styling for the rest of the page
  */
@@ -349,7 +330,6 @@ main {
 .cta {
     background: #6772e5;
     color: #fff;
-    font-weight: 700;
     white-space: nowrap;
     display: inline-block;
     padding: 6px 14px;
@@ -367,4 +347,23 @@ main {
 
 .cta:hover {
     background: #6c73be;
+}
+
+.form-btn {
+    font-size: 18px;
+    padding: .5em 1em;
+    border: transparent;
+    border-radius: 2px;
+    white-space: nowrap;
+    cursor: pointer;
+    letter-spacing: 0.01em;
+    background: #0078e7;
+    color: #fff;
+    -moz-user-select: none;
+    user-select: none;
+    line-height: normal;
+}
+
+.form-btn:hover {
+    background: #277ecf;
 }
