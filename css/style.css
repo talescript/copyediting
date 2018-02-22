@@ -77,8 +77,13 @@ ol {
 /*********************
 ****** Styling *******
 *********************/
+.upper {
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
 h1, .header-wrapper > p,
-ul li {
+.links > ul li {
     text-transform: uppercase;
     font-weight: 700;
 }
@@ -296,4 +301,29 @@ header a {
 main {
     max-width: 45em;
     margin: 0 auto;
+    padding: 0.5em;
+    margin-bottom: 2em;
+}
+
+.cta {
+    background: #333;
+    color: #fff;
+
+    white-space: nowrap;
+    display: inline-block;
+    padding: 6px 14px;
+    box-shadow: 0 4px 6px rgba(50, 50, 93, .11),
+                0 1px 3px rgba(0, 0, 0, 0.08);
+    border-radius: 4px;
+    font-size: 15px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.025em;
+    text-decoration: none;
+    transition: all .15s ease;
+
+}
+
+.cta:hover {
+    background: #eb4a42;
 }
