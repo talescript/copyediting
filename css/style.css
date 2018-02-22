@@ -107,7 +107,7 @@ header a {
     color: rgba(38, 37, 32, 0.9);
 }
 
-header a:hover {
+header li:hover {
     color: #f9423a;
     
 }
@@ -156,7 +156,7 @@ header a {
     }
     header a {
         border-bottom: none;
-        text-transform: uppercase;
+        
         color: rgba(12, 12, 10, 0.8);
         font-weight: 700;
     }
@@ -173,6 +173,10 @@ header a {
         border-top: 5px solid rgba(12, 12, 10, 0.8);
         text-align: left;
         padding: 2px 0;
+    }
+
+    header .links li:first-child {
+        border-top: none;
     }
 
     header .links li:last-child {
