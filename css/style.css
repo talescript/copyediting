@@ -295,20 +295,38 @@ header a {
     }
 }
 
+.cta {
+    text-align: center;
+}
+
+.center-element {
+    display: flex;
+    justify-content: center;
+}
+
+/**
+ * Form
+ */
+.form form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
 /**
  * Styling for the rest of the page
  */
 main {
-    max-width: 45em;
+    max-width: 38em;
     margin: 0 auto;
     padding: 0.5em;
     margin-bottom: 2em;
 }
 
 .cta {
-    background: #333;
+    background: #6772e5;
     color: #fff;
-
+    font-weight: 700;
     white-space: nowrap;
     display: inline-block;
     padding: 6px 14px;
@@ -325,5 +343,5 @@ main {
 }
 
 .cta:hover {
-    background: #eb4a42;
+    background: #6c73be;
 }
