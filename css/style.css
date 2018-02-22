@@ -362,6 +362,8 @@ main {
     -moz-user-select: none;
     user-select: none;
     line-height: normal;
+    text-transform: uppercase;
+    
 }
 
 .form-btn:hover {
