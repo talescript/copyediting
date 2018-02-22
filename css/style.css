@@ -77,7 +77,8 @@ ol {
 /*********************
 ****** Styling *******
 *********************/
-h1, .header-wrapper > p {
+h1, .header-wrapper > p,
+ul li {
     text-transform: uppercase;
     font-weight: 700;
 }
