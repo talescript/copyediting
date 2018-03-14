@@ -120,11 +120,13 @@ ol {
     margin: 0.5em 0;
 }
 
-@supports (display: grid) {
-    .container {
-        padding: 0;
-    }
+svg {
+    fill: black;
+    width: 10%;
+    height: auto;
+}
 
+@supports (display: grid) {
     .hero-grid {
         display: grid;
         grid-template-columns: repeat(4, 1fr);
