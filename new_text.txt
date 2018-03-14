@@ -1,0 +1,64 @@
+Are you doing everything yourself?
+
+Can’t get enough free time? Picture spending time with family
+
+
+We can help.
+
+
+We write compelling stories for your website.
+Why? To make readers want to read more.
+
+We turn technical lingo into direct, easy-to-understand text.
+Why? So that everyone can grasp the message.
+
+With clear concise words busy readers can quickly grasp YOUR message.
+
+You can count on TRUE, GENUINE, ENGAGING AND ATTENTION-GRABBING stories.
+
+And what’s more our writing aims to establish a BOND with YOUR clients.
+
+
+
+Imagine YOU have that time to LEAD your business to SUCCESS
+
+While we tell YOUR story. Someone reading a book
+
+So Let’s Get Started --------
+
+CTA - Get in Touch
+
+
+OLD TEXT
+
+    <header>
+        <div class="container">
+            <h1>Write it right</h1>
+            <p>Copywriting for busy leaders</p>
+        </div>
+    </header>
+    <main>
+
+        <section>
+            <div class="container">
+                <ul>
+                    <li>We write clear and simple words</li>
+                    <li>to engage your customers</li>
+                    <li>To optimize growth</li>
+                    <li>And to capture success.</li>
+                </ul>
+            </div>
+        </section>
+
+        <section>
+            <div class="container">
+                <p>Our Copywriting saves you time to work on your business. Gives your writing the attention it deserves. With
+                    direct, easy-to-understand text to capture your visitors' attention, to move them with conviction that
+                    your product/service is true and genuine, and make your company stand out from the rest. Compelling words
+                    that begs your readers to keep on reading. Clear, concise text that busy readers can scan through quickly
+                    and easily. Words that Influence, Persuade, Engage and Capture Attention.
+                </p>
+                <p>And What's More - Our writing aims to establish a bond with your clients.</p>
+                <p>Imagine you have that time to lead your business to success, while we tell your story.</p>
+            </div>
+        </section>

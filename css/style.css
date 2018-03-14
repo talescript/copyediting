@@ -72,16 +72,107 @@ ol {
     margin: 0;
 }
 
+/**
+ * Layout
+ */
+ .container {
+    max-width: 42em;
+    margin: 0 auto;
+}
+
+@media (max-width: 750px) {
+    .container {
+        padding: 0 0.5em;
+    }
+}
+
 /*********************
 ****** Styling *******
 *********************/
-.upper {
-    text-transform: uppercase;
-    font-weight: 600;
+
+/**
+ * HEADER
+ */
+.hero {
+    height: 600px;
 }
 
+.hero-grid {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: inherit;
+}
 
+@supports (display: grid) {
+    .hero-grid {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+        height: 100vh;
+    }
+    
+    .hero-grid h1 {
+        grid-column: 1 / span 3;
+        grid-row: 2;
+    }
+    
+    .hero-grid p {
+        grid-column: 2 / span 3;
+        grid-row: 3;
+    }
 
+    .hero {
+        height: 100vh;
+    }
+}
+
+.hero h1 {
+    font-size: 3em;
+}
+
+.hero p {
+    font-size: 2em;
+}
+
+@media (max-width: 750px) {
+    .hero h1, .hero p {
+        line-height: 1;
+    }
+}
+
+.hero h1, .hero p {
+    margin: 0;
+    color: #fff;
+}
+
+.hero {
+    background-image: linear-gradient(to top, rgba(49,151,214,0.741), 
+                    rgba(24,29,33,0.741)), 
+                    url(../assets/header-s.jpeg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* Larger than tablet */
+@media (min-width: 750px) {
+    .hero {
+        background-image: linear-gradient(to top, rgba(49,151,214,0.741), 
+                        rgba(24,29,33,0.741)), 
+                          url(../assets/header-m.jpeg);
+    }
+}
+
+/* Larger than desktop */
+@media (min-width: 1000px) {
+    .hero {
+        background-image: linear-gradient(to top, rgba(49,151,214,0.741), 
+                        rgba(24,29,33,0.741)), 
+                          url(../assets/header.jpeg);
+    }
+}
 
 
 .cta {
@@ -104,16 +195,6 @@ ol {
 
 .form button {
     margin: 1em auto;
-}
-
-/**
- * Styling for the rest of the page
- */
-header, main {
-    max-width: 38em;
-    margin: 0 auto;
-    padding: 0.5em;
-    margin-bottom: 2em;
 }
 
 .cta {
@@ -158,3 +239,18 @@ header, main {
 .form-btn:hover {
     background: #277ecf;
 }
+
+/* Larger than mobile */
+@media (min-width: 400px) {}
+
+/* Larger than phablet (also point when grid becomes active) */
+@media (min-width: 550px) {}
+
+/* Larger than tablet */
+@media (min-width: 750px) {}
+
+/* Larger than desktop */
+@media (min-width: 1000px) {}
+
+/* Larger than Desktop HD */
+@media (min-width: 1200px) {}
