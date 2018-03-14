@@ -31,7 +31,16 @@ body {
     font-weight: 400;
     text-align: left;
     font-kerning: normal;
-    line-height: 1.45;
+    line-height: 1.4;
+}
+
+/* Responsive images */
+img {
+    height: auto;
+    max-width: 100%;
+    vertical-align: middle;
+    border: 0;
+    border-style: none;
 }
 
 /**
@@ -75,7 +84,7 @@ ol {
 /**
  * Layout
  */
- .container {
+.container {
     max-width: 42em;
     margin: 0 auto;
 }
@@ -93,10 +102,6 @@ ol {
 /**
  * HEADER
  */
-.hero {
-    height: 600px;
-}
-
 .hero-grid {
     display: flex;
     flex-direction: column;
@@ -105,26 +110,86 @@ ol {
     height: inherit;
 }
 
+.hero {
+    height: 400px;
+    text-align: center;
+}
+
+.hero h1,
+.hero p {
+    margin: 0.5em 0;
+}
+
 @supports (display: grid) {
+    .container {
+        padding: 0;
+    }
+
     .hero-grid {
         display: grid;
         grid-template-columns: repeat(4, 1fr);
         grid-template-rows: repeat(4, 1fr);
         height: 100vh;
+        text-align: left;
     }
     
     .hero-grid h1 {
         grid-column: 1 / span 3;
         grid-row: 2;
+        align-self: end;
     }
     
     .hero-grid p {
         grid-column: 2 / span 3;
         grid-row: 3;
+        align-self: start;
     }
 
     .hero {
         height: 100vh;
+    }
+
+    @media (max-width: 750px) {
+        .hero-grid h1 {
+            align-self: start;
+        }
+        
+        .hero-grid p {
+            align-self: end;
+        }
+
+        .hero-grid h1,
+        .hero-grid p {
+            margin: 0;
+        }
+    }
+}
+
+/** 
+ * iPad with portrait orientation.
+ */
+@media all and (device-width: 768px) and (device-height: 1024px) and (orientation:portrait){
+    .hero {
+      height: 1024px;
+    }
+}
+  
+  /** 
+   * iPad with landscape orientation.
+   */
+@media all and (device-width: 768px) and (device-height: 1024px) and (orientation:landscape){
+    .hero {
+      height: 768px;
+    }
+}
+
+/**
+ * iPhone 5
+ * You can also target devices with aspect ratio.
+ */
+@media screen and (device-aspect-ratio: 40/71) {
+    .hero {
+      height: 500px;
     }
 }
 
@@ -143,7 +208,6 @@ ol {
 }
 
 .hero h1, .hero p {
-    margin: 0;
     color: #fff;
 }
 
@@ -174,6 +238,72 @@ ol {
     }
 }
 
+/**
+ * Spacing between sections
+ */
+/* .features,
+.story {
+    margin: 2em 0;
+}
+.about figure {
+    margin-top: 2em;
+} */
+
+/**
+ * About
+ */
+/* .about {
+    background: #3197d6;
+} */
+.about, .features h2 {
+    text-align: center;
+}
+
+.about,
+.features,
+.story, figure {
+    margin-top: 3em;
+}
+
+img {
+    border-radius: 4px;
+    box-shadow: 2px 4px 4px #000;
+}
+
+@supports (display: grid) {
+    .about-grid {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        justify-content: center;
+        align-items: center;
+    }
+
+    @media (max-width: 750px) {
+        .about-grid {
+            grid-template-columns: 1fr;
+        }
+        .about-item {
+            padding: 0 0.5em;
+        }
+    }
+
+    .about-item {
+        text-align: left;
+        font-size: 1.5em;
+    }
+}
+
+/**
+ * Features
+ */
+
+/**
+ * Story
+ */
+
+/**
+ * REMOVE PARAGRAPH MARGINS
+ */
 
 .cta {
     text-align: center;
