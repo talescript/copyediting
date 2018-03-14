@@ -169,7 +169,8 @@ ol {
  * iPad with portrait orientation.
  */
 @media all and (device-width: 768px) and (device-height: 1024px) and (orientation:portrait){
-    .hero {
+    .hero,
+    .hero-grid {
       height: 1024px;
     }
 }
@@ -178,7 +179,8 @@ ol {
    * iPad with landscape orientation.
    */
 @media all and (device-width: 768px) and (device-height: 1024px) and (orientation:landscape){
-    .hero {
+    .hero,
+    .hero-grid {
       height: 768px;
     }
 }
@@ -188,7 +190,8 @@ ol {
  * You can also target devices with aspect ratio.
  */
 @media screen and (device-aspect-ratio: 40/71) {
-    .hero {
+    .hero,
+    .hero-grid {
       height: 500px;
     }
 }
@@ -265,15 +268,48 @@ ol {
     margin-top: 3em;
 }
 
+@media (max-width: 800px) {
+    .about {
+        margin-top: 1em;
+    }
+}
+
+.about-item {
+    font-size: 1.5em;
+}
+
+.features:before {
+    content: " ";
+    display: block;
+    width: 80%;
+    margin: 0 auto;
+    border-bottom: 1px solid black;
+}
+
+figure {
+    margin: 0;
+}
+
 img {
     border-radius: 4px;
     box-shadow: 2px 4px 4px #000;
 }
 
+@media (max-width: 905px) {
+    img {
+        border-radius: 0;
+        box-shadow: none;
+    }
+    .about-item {
+        margin: 0 0.5em;
+        font-size: 1.2em;
+    }
+}
+
 @supports (display: grid) {
     .about-grid {
         display: grid;
-        grid-template-columns: 1fr 2fr;
+        grid-template-columns: 1.5fr 2fr;
         justify-content: center;
         align-items: center;
     }
@@ -289,7 +325,6 @@ img {
 
     .about-item {
         text-align: left;
-        font-size: 1.5em;
     }
 }
 
