@@ -244,13 +244,17 @@ ol {
 /**
  * Spacing between sections
  */
-/* .features,
-.story {
-    margin: 2em 0;
-}
-.about figure {
-    margin-top: 2em;
-} */
+ .about,
+ .features,
+ .story, figure {
+     margin-top: 3em;
+ }
+ 
+ @media (max-width: 800px) {
+     .about {
+         margin-top: 1em;
+     }
+ }
 
 /**
  * About
@@ -258,20 +262,8 @@ ol {
 /* .about {
     background: #3197d6;
 } */
-.about, .features h2 {
+.features h2 {
     text-align: center;
-}
-
-.about,
-.features,
-.story, figure {
-    margin-top: 3em;
-}
-
-@media (max-width: 800px) {
-    .about {
-        margin-top: 1em;
-    }
 }
 
 .about-item {
@@ -314,6 +306,10 @@ img {
         align-items: center;
     }
 
+    .about-item {
+        text-align: left;
+    }
+
     @media (max-width: 750px) {
         .about-grid {
             grid-template-columns: 1fr;
@@ -321,10 +317,9 @@ img {
         .about-item {
             padding: 0 0.5em;
         }
-    }
-
-    .about-item {
-        text-align: left;
+        .about-item {
+            text-align: center;
+        }
     }
 }
 
