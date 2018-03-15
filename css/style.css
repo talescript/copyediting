@@ -51,12 +51,12 @@ img {
 }
 
 body {
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Lora', serif;
 }
 
 h1, h2, h3,
 h4, h5, h6 {
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Lora', serif;
 }
 
 /**
@@ -118,12 +118,6 @@ ol {
 .hero h1,
 .hero p {
     margin: 0.5em 0;
-}
-
-svg {
-    fill: black;
-    width: 10%;
-    height: auto;
 }
 
 @supports (display: grid) {
@@ -272,13 +266,13 @@ svg {
     font-size: 1.5em;
 }
 
-.features:before {
+/* .features:before {
     content: " ";
     display: block;
     width: 80%;
     margin: 0 auto;
     border-bottom: 1px solid black;
-}
+} */
 
 figure {
     margin: 0;
@@ -304,6 +298,7 @@ img {
     .about-grid {
         display: grid;
         grid-template-columns: 1.5fr 2fr;
+        grid-gap: 1em;
         justify-content: center;
         align-items: center;
     }
@@ -328,6 +323,28 @@ img {
 /**
  * Features
  */
+.features-container {
+    margin-top: 2em;
+    padding: 1em;
+    box-shadow: 0 10px 20px rgba(183, 28, 28, 0.19), 0 6px 6px rgba(183, 28, 28, 0.23);
+}
+
+.features-container svg,
+.story-container svg {
+    display: block;
+    margin: 0 auto;
+    width: 20%;
+}
+
+.features-container,
+.story-container {
+    text-align: center;
+}
+
+span {
+    font-weight: 800;
+    font-size: 1.05em;
+}
 
 /**
  * Story
@@ -344,6 +361,24 @@ img {
 .center-element {
     display: flex;
     justify-content: center;
+}
+
+/**
+ * Footer
+ */
+footer {
+    background: #3197d6;
+    height: 50px;
+}
+
+.attri {
+    font-size: 10px;
+    color: #fff;
+}
+
+.attri a {
+    color: #fff;
+    text-decoration: none;
 }
 
 /**
