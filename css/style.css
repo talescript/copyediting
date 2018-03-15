@@ -209,9 +209,9 @@ ol {
 .hero h1, .hero p {
     color: #fff;
 }
-
+/* rgba(49,151,214,0.741) blue bg */
 .hero {
-    background-image: linear-gradient(to top, rgba(49,151,214,0.741), 
+    background-image: linear-gradient(to top, rgba(183, 28, 28, 0.59), 
                     rgba(24,29,33,0.741)), 
                     url(../assets/header-s.jpeg);
     background-position: center center;
@@ -222,7 +222,7 @@ ol {
 /* Larger than tablet */
 @media (min-width: 750px) {
     .hero {
-        background-image: linear-gradient(to top, rgba(49,151,214,0.741), 
+        background-image: linear-gradient(to top, rgba(183, 28, 28, 0.59), 
                         rgba(24,29,33,0.741)), 
                           url(../assets/header-m.jpeg);
     }
@@ -231,7 +231,7 @@ ol {
 /* Larger than desktop */
 @media (min-width: 1000px) {
     .hero {
-        background-image: linear-gradient(to top, rgba(49,151,214,0.741), 
+        background-image: linear-gradient(to top, rgba(183, 28, 28, 0.59), 
                         rgba(24,29,33,0.741)), 
                           url(../assets/header.jpeg);
     }
@@ -324,7 +324,7 @@ img {
  * Features
  */
 .features-container {
-    margin-top: 2em;
+    margin-top: 3em;
     padding: 1em;
     box-shadow: 0 10px 20px rgba(183, 28, 28, 0.19), 0 6px 6px rgba(183, 28, 28, 0.23);
 }
@@ -349,6 +349,21 @@ span {
 /**
  * Story
  */
+.story-container {
+    margin: 6em auto 0 auto;
+}
+
+/**
+ * CTA CONTAINER
+ */
+.cta-container {
+    margin: 0 auto 8em auto;
+    text-align: center;
+}
+
+.cta-container p {
+    font-size: 1.5em;
+}
 
 /**
  * REMOVE PARAGRAPH MARGINS
@@ -367,7 +382,7 @@ span {
  * Footer
  */
 footer {
-    background: #3197d6;
+    background: #0078e7;
     height: 50px;
 }
 
