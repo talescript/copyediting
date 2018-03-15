@@ -341,6 +341,21 @@ img {
     text-align: center;
 }
 
+@supports (display: grid) {
+    .features .container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 1em;
+    }
+    .item-3 {
+        grid-column: 1 / span 2;
+    }
+
+    .features-container {
+        margin-top: 1em;
+    }
+}
+
 span {
     font-weight: 800;
     font-size: 1.05em;
