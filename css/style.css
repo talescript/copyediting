@@ -359,6 +359,9 @@ img {
         .features .container {
             grid-template-columns: 1fr;
         }
+        .item-3 {
+            grid-column: 1;
+        }
     }
 }
 
