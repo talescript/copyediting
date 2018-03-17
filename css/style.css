@@ -62,9 +62,9 @@ h4, h5, h6 {
 /**
  * Link Styles and list Styles
  */
-a {
+/* a {
     text-decoration: none;
-}
+} */
 
 ul {
     list-style: none;
@@ -80,6 +80,27 @@ ol {
     padding: 0;
     margin: 0;
 }
+
+/**
+ * Nav
+ */
+nav {
+    padding: 0.5em 0;
+    background: #23212c;
+}
+
+nav ul {
+    display: flex;
+    margin: 0 0 0 2em;
+}
+
+nav ul li a {
+    padding: 4px 8px;
+    border-radius: 4px;
+    line-height: 0;
+    color: #fff;
+}
+
 
 /**
  * Layout
@@ -429,14 +450,65 @@ footer {
 /**
  * Form
  */
+.form {
+    min-height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+    background: #0d9aa2;
+    color: #fff;
+
+    box-shadow: 0 4px 6px rgba(50, 50, 93, .11),
+                0 1px 3px rgba(0, 0, 0, 0.08);
+    border-radius: 0 0 4px 4px;
+}
+
 .form form {
+    min-width: 80%;
+}
+
+form {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
 
-.form button {
+form input {
+    margin-bottom: 0.6rem;
+}
+
+form button {
     margin: 1em auto;
+}
+
+/** 
+ * iPad with portrait orientation.
+ */
+ @media all and (device-width: 768px) and (device-height: 1024px) and (orientation:portrait){
+    .form {
+      height: 1024px;
+    }
+}
+
+/** 
+ * iPad with landscape orientation.
+ */
+@media all and (device-width: 768px) and (device-height: 1024px) and (orientation:landscape){
+    .form {
+      height: 768px;
+    }
+}
+
+/**
+ * iPhone 5
+ * You can also target devices with aspect ratio.
+ */
+@media screen and (device-aspect-ratio: 40/71) {
+    .form {
+      height: 500px;
+    }
 }
 
 .cta {
@@ -469,17 +541,25 @@ footer {
     white-space: nowrap;
     cursor: pointer;
     letter-spacing: 0.01em;
-    background: #0078e7;
+    background: rgba(183, 28, 28, 0.79);
     color: #fff;
     -moz-user-select: none;
     user-select: none;
     line-height: normal;
     text-transform: uppercase;
-    
 }
 
 .form-btn:hover {
-    background: #277ecf;
+    background: rgba(183, 28, 28, 0.69);
+}
+
+
+.form-btn-color {
+    background: #045f6b;
+}
+
+.form-btn-color:hover {
+    background: #108696;
 }
 
 /* Larger than mobile */
